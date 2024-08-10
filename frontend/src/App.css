@@ -1,0 +1,107 @@
+/* Basic resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Container styles */
+.App {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* File upload input styling */
+input[type="file"] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  padding: 12px 24px;
+  margin-bottom: 20px;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+label:hover {
+  background-color: #45a049;
+}
+
+/* Extracted and processed text styling */
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-align: left;
+}
+
+p {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #555;
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.cont {
+  margin-top: 20px;
+}
+
+pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: left;
+  overflow-x: auto;
+  max-height: 400px;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  margin-top: 20px;
+}
+
+/* PDF viewer */
+.react-pdf__Document {
+  margin: 20px auto;
+  max-width: 100%;
+  text-align: left;
+}
+
+.react-pdf__Page {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.react-pdf__Page__canvas {
+  border-radius: 10px;
+}
+
