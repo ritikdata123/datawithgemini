@@ -3,6 +3,7 @@ import { Document, Page } from 'react-pdf';
 import axios from 'axios';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import "./App.css";
+import Chat from './Chat';
 
 function App() {
   const [pdfFile, setPdfFile] = useState(null);
@@ -14,9 +15,9 @@ function App() {
   if (!apiKey) {
     throw new Error('API key is not set in environment variables.');
   }
-  if(apiKey){
-    console.log(apiKey);
-  }
+  // if(apiKey){
+  //   console.log(apiKey);
+  // }
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -79,6 +80,7 @@ function App() {
           "total_amount": 38.50
         }
         `;
+      // const prompt = `tell more about some best stories`;
         const aiResponse = await model.generateContent(prompt);
   
         setProcessedText(aiResponse.response.text());
@@ -92,7 +94,7 @@ function App() {
     <>
 
 
-
+   <Chat/>
 
     <div className="App">
       <h1>Upload Your Invoice</h1>
